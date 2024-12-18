@@ -1,3 +1,9 @@
+# User's streaming history files
+resources/listening_history/*
+
+# Output files
+resources/output/*
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
