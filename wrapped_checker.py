@@ -19,7 +19,7 @@ def read_file(file_path):
         data = json.load(file)
         for stream in data:
             duration = stream['msPlayed']
-            if stream['msPlayed'] > 12000:
+            if stream['msPlayed'] > 12000 and '2024' in stream['endTime']:
                 song = stream['trackName']
                 if song in song_count and song in song_duration:
                     song_count[song] += 1
